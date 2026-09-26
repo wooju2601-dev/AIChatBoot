@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+#outer{
+    width: 1024px;
+    height: 996px;
+    border:10px;
+    background-color: #ACE5E1;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#title{
+    width:516px;
+    height: 87px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#mbti{
+    width: 114px;
+    height: 54px;
+    margin-left: 50%;
+
+}
+#radios,
+#radios1,
+#radios2,
+#radios3,
+#radios4,
+#radios5,
+#radios6,
+#radios7{
+    width:48px;
+    height:29px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.content{
+    width: 841px;
+    height: 517px;
+    background-color: #D9D9D9;
 }
 
-.App-link {
-  color: #61dafb;
+#select{
+    width: 48px;
+    height: 29px;
+    background-color: red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mbti_title{
+    font-family: Inter, sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #8893C6;
+}
+
+.title{
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 72px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color:#FFFFFF;
+}
+
+.box{
+    border:1px solid #ddd;
+    width: 49px;
+    height: 29px;
+
+}
+
+#pick{
+    width: 106px;
+    height: 40px;
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 10px;
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #E80D0D;
+    cursor:pointer;
+    margin-top: -150px;
+    margin-left: 419px;
+}
+
+.img{
+    width: 34px;
+    height: 34px;
+    margin-left:800px;
+}
+
+#pick:hover{
+    background-color: #cfcfcf;
+    transform: scale(1.05);
+}
+
+#pick:active{
+    transform: scale(0.98);
 }
