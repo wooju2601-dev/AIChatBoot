@@ -1,13 +1,14 @@
 #outer {
   width: 1024px;
-  height: 996px;
+  height: 988px;
   border: 10px;
   background-color: #ace5e1;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 #title {
@@ -23,11 +24,16 @@
   margin-left: 50%;
 }
 
-.content {
+/* .content {
   width: 841px;
   height: 517px;
+  display: flex;
   background-color: #d9d9d9;
-}
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  box-sizing: border-box;
+} */
 
 .mbti_title {
   font-family: Inter, sans-serif;
@@ -35,6 +41,7 @@
   font-size: 45px;
   line-height: 100%;
   letter-spacing: 0;
+  text-align: center;
   color: #8893c6;
 }
 
@@ -79,7 +86,7 @@
 }
 
 #mbti-radio-box {
-  dispaly: flex;
+  display: flex;
   flex-direction: column;
   gap: 20px;
   background: white;
@@ -88,6 +95,8 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   width: fit-content;
   margin: 20px auto;
+  align-items: center;
+  justify-content: center;
   align-items: center;
 }
 
@@ -98,7 +107,7 @@
 }
 
 .radio-option {
-  dispaly: flex;
+  display: flex;
   align-items: center;
   gap: 6px;
   font-size: 1.2rem;
@@ -112,4 +121,81 @@
   cursor: pointer;
   width: 16px;
   height: 16px;
+}
+
+.content {
+  width: 841px;
+  height: 400px;
+  background-color: #d9d9d9;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 auto;
+}
+
+.chat-messages-container {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 0;
+  margin-bottom: 10px;
+  padding-right: 5px;
+}
+
+.input-box {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.chatInpt {
+  flex: 1;
+  height: 45px;
+  border-radius: 8px;
+  border: 1px solid #777;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+
+.inputButton {
+  width: 70px;
+  height: 45px;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 1px solid #777;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.chat-bubble {
+  max-width: 70%;
+  padding: 10px 14px;
+  border-radius: 12px;
+  word-break: break-word;
+  margin-bottom: 8px;
+}
+
+.chat-bubble.user {
+  background-color: #41403aff;
+  color: #f8f3f3ff;
+  align-self: flex-end;
+  margin-left: auto;
+  border-top-right-radius: 2px;
+}
+
+.chat-bubble.ai {
+  background-color: #ffffff;
+  color: #333;
+  align-self: flex-start;
+  margin-right: auto;
+  border-top-left-radius: 2px;
+}
+
+.mbtiImage {
+  width: 200px;
+  height: 150px;
+  display: block;
+  margin: 0 auto;
 }
